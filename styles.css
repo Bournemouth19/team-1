@@ -23,7 +23,22 @@ body {
   overflow: auto;
 }
 
+header {
+  background: #781d7d;
+  color: #fff;
+  padding: 20px;
+}
+
+div {
+  margin: 10px;
+  background: #ffffff;
+}
+
 section {
   display: block;
   background:
+}
+
+h1 {
+  text-align: center;
 }
