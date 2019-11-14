@@ -1,3 +1,29 @@
+/*****************
+Global Style Rules
+*****************/
+
 html {
-  background: #f6f6f6;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background: #f6f6f6;
+    margin: 0; /* Removes background border around elements */
+}
+
+.content-wrap {
+  max-width: 960px;
+  min-width: 560px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: auto;
+}
+
+section {
+  display: block;
+  background:
 }
