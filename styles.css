@@ -23,7 +23,7 @@ body {
   overflow: auto;
 }
 
-header {
+header, footer {
   background: #781d7d;
   color: #fff;
   padding: 20px;
