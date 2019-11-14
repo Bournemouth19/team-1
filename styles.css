@@ -16,7 +16,7 @@ body {
 }
 
 .content-wrap {
-  max-width: 960px;
+  max-width: 1280px;
   min-width: 560px;
   margin: 0 auto;
   padding: 60px 50px;
@@ -56,6 +56,12 @@ h1, h2 {
 
 a {
   padding: 10px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+#video_tours {
+  text-align: center;
 }
 
 .btn {
@@ -66,7 +72,6 @@ a {
 }
 
 .btn:hover {
-  background: #781d7d;
-  color: #e63946;
+  background: #e63946;
   font-weight: bolder;
 }
