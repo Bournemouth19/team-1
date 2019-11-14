@@ -1,4 +1,4 @@
-from flask import Flask, request, send_from_directory
+from flask import Flask, request, render_template
 app = Flask(__name__)
 
 import os
@@ -6,35 +6,25 @@ import codecs
 
 @app.route("/")
 def hello():
-	return readHTML('index.html')
-
-
-@app.route("/search/<name>")
+	return render_template('index.html')
+	
+	
+@app.route("/LocationPages/<name>")
 def search(name):
-	path = 'LocationPages/'
-	if name in 'Cafe Area':
-		return readHTML(path + 'cafe.html')
-	elif name in 'Game Room':
-		return readHTML(path + 'games_room.html')
-	elif name in 'Hall way':
-		return readHTML(path + 'hall.html')
-	elif name in 'Outside':
-		return readHTML(path + 'outside.html')
-	elif name in 'Repair room':
-		return readHTML(path + 'PC_repair_room.html')
+	path = '/LocationPages/'
+	if name == 'Cafe.html':
+		return render_template(path + 'Cafe.html')
+	elif name == 'games_room.html':
+		return render_template(path + 'games_room.html')
+	elif name == 'hall.html':
+		return render_template(path + 'hall.html')
+	elif name == 'outside.html':
+		return render_template(path + 'outside.html')
+	elif name == 'pc_repair_room.html':
+		return render_template(path + 'pc_repair_room.html')
+	
 
-
-def readHTML(file):
-	f = codecs.open(file, 'r')
-	content = f.read()
-	return content;
-
-def search_1(search_word):
-	video_dir = 'videos'
-	for filename in os.listdir(video_dir):
-		if search_word in filename:
-			pass # Do sthing
-
+	
 if __name__ == "__main__":
     app.run()
 	#print(readHTML('index.html'))
