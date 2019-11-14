@@ -42,3 +42,20 @@ section {
 h1, h2 {
   text-align: center;
 }
+
+a {
+  padding: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  background: #781d7d;
+  color: #fff;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #781d7d;
+  color: #e63946;
+  font-weight: bolder;
+}
